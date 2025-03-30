@@ -53,7 +53,7 @@ The crack time estimation is calculated based on:
 
 ## Screenshot
 
-![Password Analyzer Screenshot](screenshot.png)
+![Password Analyzer Screenshot](ss.png)
 
 ## License
 
