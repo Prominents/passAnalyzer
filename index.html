@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Analyzer</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Strength Analyzer</h1>
+        <div class="input-container">
+            <input type="password" id="passwordInput" placeholder="Enter your password...">
+            <button id="togglePassword" class="toggle-btn">👁️</button>
+        </div>
+        <div class="results">
+            <div class="crack-duration">
+                <span class="label">Estimated time required for brute force attack</span>
+                <span class="time" id="crackTime">instantly</span>
+            </div>
+            <ul class="feedback-list">
+                <li>Password length: <span id="lengthCount">0</span></li>
+                <li>Uppercase letters: <span id="uppercaseCount">0</span></li>
+                <li>Lowercase letters: <span id="lowercaseCount">0</span></li>
+                <li>Numbers: <span id="numberCount">0</span></li>
+                <li>Symbols: <span id="symbolCount">0</span></li>
+            </ul>
+        </div>
+    </div>
+    <div class="note">
+        Note: The computed strength is based on the time it would take to crack the password using a brute force approach, it does not take into account the possibility of a dictionary attack.
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
